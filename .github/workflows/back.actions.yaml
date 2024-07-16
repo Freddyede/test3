@@ -7,7 +7,7 @@ on:
     branches: [ tests ] # Trigger the workflow on pull requests targeting the main branch.
 
 jobs:
-  unit-testing:
+  unit-testing_nodeJs:
     runs-on: ubuntu-latest
     defaults:
       run:
