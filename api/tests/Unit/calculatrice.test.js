@@ -2,6 +2,7 @@ import Calculatrice from '../../src/Calculatrice.js';
 
 let calculatrice;
 
+// test
 beforeEach(() => {
     calculatrice = new Calculatrice();
 })
