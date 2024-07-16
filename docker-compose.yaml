@@ -1,0 +1,16 @@
+version: '3'
+services:
+  back:
+    build: ./api
+    networks:
+      - back
+  server:
+    build: ./nginx
+    ports:
+      - "80:80"
+    networks:
+      - back
+      - front
+networks:
+  back:
+  front:
