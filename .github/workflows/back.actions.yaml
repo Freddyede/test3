@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ] # Trigger the workflow on every commit to the develop branch.
+    branches: [ main ] # Trigger the workflow on every commit to the main branch.
   pull_request:
     branches: [ main ] # Trigger the workflow on pull requests targeting the main branch.
 
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'api/'
+        working-directory: 'api'
     strategy:
       matrix:
         node-version: [20.11.1] # Define a matrix of Node.js versions to test.There would be 3 jobs for 12.x, 14.x, 16.x
