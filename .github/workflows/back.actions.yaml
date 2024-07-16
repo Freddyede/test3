@@ -2,8 +2,7 @@ name: backendTesting
 on: ["push"]
 jobs:
   unit-tests:
-    name: Test npm (Node ${{ matrix.node-version}}, ${{ matrix.os }})
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu:latest
     steps:
       - uses: actions/checkout@v4
       - name: Clean global cache
