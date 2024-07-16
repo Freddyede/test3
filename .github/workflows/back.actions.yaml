@@ -1,8 +1,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ develop ] # Trigger the workflow on every commit to the develop branch.
   pull_request:
     branches: [ main ] # Trigger the workflow on pull requests targeting the main branch.
 
