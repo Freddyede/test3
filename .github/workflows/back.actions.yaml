@@ -4,5 +4,7 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
+      - run: git clone https://github.com/Freddyede/test3.git
+      - run: cd test3/api
       - run: npm install
       - run: npm run tests:unit
