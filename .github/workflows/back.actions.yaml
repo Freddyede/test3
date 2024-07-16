@@ -6,6 +6,6 @@ jobs:
     steps:
       - run: git clone https://github.com/Freddyede/test3.git
       - run: cd test3/api
-      - run: apt update && apt upgrade && apt i npm -y
+      - run: sudo apt update && sudo apt upgrade && sudo apt i npm -y
       - run: npm install
       - run: npm run tests:unit
