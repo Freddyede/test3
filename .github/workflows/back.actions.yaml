@@ -33,6 +33,7 @@ jobs:
     - name: Run tests
       run: npm run tests:unit # Step 4: Run tests using the specified Node.js version.
   func-testing_nodeJs:
+    needs: unit-testing_nodeJs
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -58,6 +59,7 @@ jobs:
     - name: Run tests
       run: npm run tests:func # Step 4: Run tests using the specified Node.js version.
   e2e-testing_nodeJs:
+    needs: [unit-testing_nodeJs, func-testing_nodeJs]
     runs-on: ubuntu-latest
     defaults:
       run:
