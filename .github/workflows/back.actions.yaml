@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main, tests ] # Trigger the workflow on every commit to the main branch.
+    branches: [ tests ] # Trigger the workflow on every commit to the main branch.
   pull_request:
-    branches: [ main, tests ] # Trigger the workflow on pull requests targeting the main branch.
+    branches: [ tests ] # Trigger the workflow on pull requests targeting the main branch.
 
 jobs:
   unit-testing:
