@@ -6,7 +6,6 @@ jobs:
     defaults:
       run:
         working-directory: ../../api
-    name: init project
     steps:
       - run: npm install
       - run: npm run tests:unit
