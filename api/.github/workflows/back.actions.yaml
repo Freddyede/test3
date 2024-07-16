@@ -3,9 +3,6 @@ on: ["push"]
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ../api
     steps:
       - run: npm install
       - run: npm run tests:unit
