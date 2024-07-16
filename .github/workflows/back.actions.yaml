@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu:latest
     steps:
       - name: Setup Node
-        uses: ./
+        uses: ./api
         with:
           node-version: 20.11.1
           cache: 'npm'
